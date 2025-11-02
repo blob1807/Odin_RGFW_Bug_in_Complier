@@ -19,28 +19,28 @@ If someone whats to send the time & add support for OSMESA, OPENGL & WAYLAND, be
 when RGFW_BUFFER {
     when RGFW_ADVANCED_SMOOTH_RESIZE {
         _window_src :: struct {
-            display: ^xlib.Display, /*!< source display */ 
-            window: xlib.Window, /*!< source window */
-            EGL_surface: egl.Surface,
-            EGL_display: egl.Display,
-            EGL_context: egl.Context,
-            bitmap: ^xlib.XImage,
-            gc: xlib.GC,
-            visual: xlib.XVisualInfo,
+            display:       ^xlib.Display, /*!< source display */ 
+            window:        xlib.Window,   /*!< source window */
+            EGL_surface:   egl.Surface,
+            EGL_display:   egl.Display,
+            EGL_context:   egl.Context,
+            bitmap:        ^xlib.XImage,
+            gc:            xlib.GC,
+            visual:        xlib.XVisualInfo,
             counter_value: i64,
-            counter: xlib.XID,
+            counter:       xlib.XID,
         }
 
     } else {
         _window_src :: struct {
-            display: ^xlib.Display, /*!< source display */
-            window: xlib.Window, /*!< source window */
+            display:     ^xlib.Display, /*!< source display */
+            window:      xlib.Window,   /*!< source window */
             EGL_surface: egl.Surface,
             EGL_display: egl.Display,
             EGL_context: egl.Context,
-            bitmap: ^xlib.XImage,
-            gc: xlib.GC,
-            visual: xlib.XVisualInfo,
+            bitmap:      ^xlib.XImage,
+            gc:          xlib.GC,
+            visual:      xlib.XVisualInfo,
         }
 
     }
@@ -48,26 +48,26 @@ when RGFW_BUFFER {
 } else {
     when RGFW_ADVANCED_SMOOTH_RESIZE {
         _window_src :: struct {
-            display: ^xlib.Display, /*!< source display */
-            window: xlib.Window, /*!< source window */
-            EGL_surface: egl.Surface,
-            EGL_display: egl.Display,
-            EGL_context: egl.Context,
-            gc: xlib.GC,
-            visual: xlib.XVisualInfo,
+            display:       ^xlib.Display, /*!< source display */
+            window:        xlib.Window,   /*!< source window */
+            EGL_surface:   egl.Surface,
+            EGL_display:   egl.Display,
+            EGL_context:   egl.Context,
+            gc:            xlib.GC,
+            visual:        xlib.XVisualInfo,
             counter_value: i64,
-            counter: xlib.XID,
+            counter:       xlib.XID,
         }
 
     } else {
         _window_src :: struct {
-            display: ^xlib.Display, /*!< source display */
-            window: xlib.Window, /*!< source window */
+            display:     ^xlib.Display, /*!< source display */
+            window:      xlib.Window,   /*!< source window */
             EGL_surface: egl.Surface,
             EGL_display: egl.Display,
             EGL_context: egl.Context,
-            gc: xlib.GC,
-            visual: xlib.XVisualInfo,
+            gc:          xlib.GC,
+            visual:      xlib.XVisualInfo,
         }
     }
 }
