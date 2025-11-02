@@ -1,0 +1,19 @@
+{
+    "$schema": "https://raw.githubusercontent.com/DanielGavin/ols/master/misc/ols.schema.json",
+    "enable_document_symbols": true,
+    "enable_semantic_tokens": false,
+    "enable_hover": true,
+    "enable_snippets": true,
+    "enable_auto_import": false,
+    "enable_completion_matching": false,
+    "enable_unused_imports_reporting": false,
+
+    "profile": "windows",
+    "profiles": [
+        { "name": "linux", "os": "linux", "checker_path": ["./"]},
+        { "name": "windows", "os": "windows", "checker_path": ["./"]},
+        { "name": "mac", "os": "darwin", "checker_path": ["./"]},
+        { "name": "wasm", "os": "wasm32", "checker_path": ["./"]}
+    ],
+    "checker_args": "-target:windows_amd64"
+}
