@@ -822,6 +822,7 @@ foreign rgfw {
 		window_freeOpenGL :: proc(win: ^window) ---
 
 		setGLHint :: proc(hint: glHints, value: i32) ---
+		getProcAddress :: proc(procname: cstring) -> rawptr ---
 		window_makeCurrent_OpenGL :: proc(win: ^window) --- /*!< to be called by RGFW_window_makeCurrent */
 		window_swapBuffers_OpenGL :: proc(win: ^window) --- /*!< swap opengl buffer (only) called by RGFW_window_swapInterval  */
 		getCurrent_OpenGL :: proc(void) -> rawptr --- /*!< get the current context (OpenGL backend (GLX) (WGL) (EGL) (cocoa) (webgl))*/
