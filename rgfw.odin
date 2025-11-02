@@ -10,7 +10,7 @@ foreign import rgfw "./lib/libRGFW.lib"
 
 RGFW_BUFFER  :: true
 RGFW_WEBGPU  :: true  // Only Backend Supported for WASM
-RGFW_OPENGL  :: false  // Not Supported on Linux
+RGFW_OPENGL  :: true  // Not Supported on Linux
 RGFW_X11     :: true  // Only Backend Supported for Linux
 RGFW_EGL     :: true  // Only Backend Supported for Linux
 RGFW_VULKAN  :: true
